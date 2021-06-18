@@ -1,70 +1,72 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend Engineer Technical Challenge
+For this project, you must create a UI to ask some information to a user and give them the ability
+to visualize the value of three different crypto coins from three different sources.
+Below is an example of what we want to achieve:
+Welcome Form
+Before the user is capable of consulting the value of the different crypto coins, we want to gather
+some basic information about them.Crypto Comparator
+Once the users fill up their basic information, they can compare the value of different crypto
+coins in a table.
+Requirements
+● The welcome screen and the dashboard screens should live in two different routes.
+● The images are only a guide, feel free to create your own UI, we expect you to be able to
+create good user interfaces on your own.
+● The basic information gathered in the "welcome screen" should be shown in the header
+of the Crypto Comparator.
+● You could use any library, and tooling of your choice, but it must be a SPA built with
+ReactJS.
+● Currency value must be updated every 15 seconds and provide feedback on the UI.
+● The CONVERT section should convert from MXN to all currencies without pressing any
+buttons.● Once the project is done share the repository URL or send it as a .zip or .tar.gz file to this
+email: \<insertemail\>
+The application code will be reviewed and scored on these key
+areas with many subset areas for each:
+● Functionality.
+● Code Format.
+● Project Structure.
+● Scalability.
+● Maintainability.
+● Use of industry best practices.
+Bonus
+● We encourage the use of functional components over class components.
+- We'd like to see some testing.
+● We appreciate good communication and want to see some documentation for this
+project.
+● If you have Docker experience, use Docker.
+● If you need to use an external library it's okay to do it. Please be careful about what you
+use.
+Don'ts
+● We don't want to see boilerplate code, please write your own code for most of the
+functionality of this test. Create React App is accepted.
+● We want to see your CSS writing skills, please refrain from using a UI library.Provider endpoints
+● CryptoCompare:
+Doc:
+https://min-api.cryptocompare.com/documentation?key=Price&cat=multipleSymbolsPrice
+Endpoint
+Endpoint:
+https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP&tsyms=USD
+● Coingecko:
+https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,
+ripple
+● StormGain: https://public-api.stormgain.com/api/v1/ticker
+Considerations
+● Feel free to use a different API as long as you are able to retrieve BTC, ETH, XRP, and
+show at least two different providers shown in the image presented above.
+● For the purpose of this test consider USDT, USDC the same as USD.
+● The values from the API will be in USD. You will need to convert it then to MXN currency
+in order to show it in the UI.Scenario problem
+You are the tech lead of a project with three 3 developers in charge of the frontend application
+designed to capture clients’ information into our platform. The stakeholders want to see the
+changes implemented in the application in a weekly manner.
+The frontend end transitions between screens are defined by a state machine, when the
+conditions are met, the application is allowed to transition to the next state with the appropriate
+screen. Each screen has a “Continue” button to navigate to the next screen once the state is
+valid.
+One particular screen in which this application has to communicate with two (2) external 3rd
+party services (that don’t depend on the application backend) as part of the business process,
+this is separated from the current state of the application, but is mandatory in order to continue.
+As the tech lead, we would like to know your take on the following questions:
+● What possible risk are you able to identify in this scenario?
+● How would you deal with dependencies?
+● What testing strategy would you suggest for this scenario?
+● At the highest level possible, what would the implementation of this look like?

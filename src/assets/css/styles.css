@@ -1,0 +1,260 @@
+/**
+ * @author Cesar Verduzco Reyna <cesar11augusto95@hotmail.com> 
+ * @description general styles of the project
+ * @version 1.0
+ * * Version description:
+ * v1.0 Created Document and the basic styles
+ * @date Created at 16/06/2021 Last Modified at 18/06/2021 
+ * @status In Used
+*/
+/**
+ * @author Cesar Verduzco Reyna <cesar11augusto95@hotmail.com> 
+ * @description variables to use in this projects
+ * @version 1.0
+ * * Version description:
+ * v1.0 Created Document
+ * @date Created at 16/06/2021 Last Modified at 16/06/2021 
+ * @status In Used
+*/
+body {
+  margin: 0;
+}
+
+/**
+* Displays grid to get a better responsive site
+*/
+.col-grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.col-grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.col-grid-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.text-center {
+  text-align: center;
+  margin: auto;
+}
+
+/**
+* Customs styles for each section of the project
+*/
+.welcome {
+  height: 100vh;
+  background-image: url("../images/cryptoBackground.jpeg");
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.form {
+  margin: auto;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+  -webkit-box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form .form-group {
+  text-align: start !important;
+}
+
+.form .btn-submit {
+  margin: 5px;
+  padding: 15px 20px 15px 20px;
+  font-size: 1em;
+}
+
+.form .btn-submit:hover {
+  cursor: pointer;
+}
+
+.form .input-form {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+label {
+  font-size: 1em;
+}
+
+.ma-5 {
+  margin: 6%;
+}
+
+.mx-4 {
+  margin: 3%;
+}
+
+.dashboard {
+  margin: auto;
+  height: 100vh;
+  max-height: 100vh;
+  background-image: url("../images/cryptoBackground.jpeg");
+}
+
+.grettings {
+  margin: auto;
+  text-align: start;
+  border: 1px solid #000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40vh;
+  padding: 15px 20px 15px 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.grettings h3 {
+  font-size: 2.4em;
+}
+
+.grettings h4 {
+  color: #34A4A3;
+}
+
+.grettings p {
+  font-size: 1em;
+  color: #34A4A3;
+}
+
+.grettings p strong {
+  color: #ffffff;
+}
+
+.sections-coins .btn-section {
+  width: 150px;
+  height: 50px;
+  border: 0px;
+  font-size: 1em;
+}
+
+.sections-coins .btn-section:hover {
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.sections-coins .active {
+  background-color: #34A4A3;
+  color: #ffffff;
+}
+
+.sections-coins ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  margin: auto;
+  padding: 0;
+}
+
+.sections-coins ul li {
+  margin: 0;
+}
+
+.tables {
+  max-height: 50vh;
+  max-width: 100%;
+}
+
+.tables .table-section {
+  margin: auto;
+  text-align: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tables .table-section table {
+  width: 100%;
+  max-width: 60vw;
+  -webkit-box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.tables .table-section table th {
+  font-size: 2.4em;
+  color: #ffffff;
+}
+
+.tables .table-section table tbody {
+  display: block;
+  height: 30vh;
+  border: 1px solid #000000;
+  overflow-y: scroll;
+  background-color: #ffffff;
+}
+
+.loading {
+  color: #ffffff;
+  font-size: 2.4em;
+}
+
+.convert-section {
+  background-color: #ffffff;
+  padding: 25px;
+  -webkit-box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #000000;
+  height: 307px;
+}
+
+/**
+* Creating grid accord to the size different than mobile
+*/
+@media only screen and (min-width: 768px) {
+  .col-grid-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .col-grid-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
